@@ -11,7 +11,15 @@
 #' @param ylab Label for the y-axis. Default is "Frequency".
 #' @return A ggplot2 object representing the histogram.
 #' @export
-#' @examples
+#' # Example 1: Basic Histogram
+#' plot_histogram(mtcars$mpg, bins = 10, title = "MPG Histogram")
+#'
+#' # Example 2: Custom Histogram with different bin size
+#' plot_histogram(iris$Sepal.Length, bins = 20, title = "Sepal Length Histogram", xlab = "Sepal Length", ylab = "Frequency")
+#'
+#' # Example 3: Histogram of randomly generated data
+#' random_data <- rnorm(1000, mean = 50, sd = 10)
+#' plot_histogram(random_data, bins = 15, title = "Random Data Histogram", xlab = "Values", ylab = "Count")
 #' plot_histogram(mtcars$mpg, bins = 10, title = "MPG Histogram")
 plot_histogram <- function(data, bins = 30, title = "Histogram", xlab = "Value", ylab = "Frequency") {
   ggplot2::ggplot(data = data.frame(x = data), ggplot2::aes(x = x)) +
@@ -31,7 +39,16 @@ plot_histogram <- function(data, bins = 30, title = "Histogram", xlab = "Value",
 #' @param ylab Label for the y-axis. Default is "Y".
 #' @return A ggplot2 object representing the scatter plot.
 #' @export
-#' @examples
+#' # Example 1: Basic Scatter Plot
+#' plot_scatter(mtcars$wt, mtcars$mpg, title = "Weight vs MPG", xlab = "Weight", ylab = "MPG")
+#'
+#' # Example 2: Scatter Plot with Iris Dataset
+#' plot_scatter(iris$Sepal.Length, iris$Sepal.Width, title = "Sepal Length vs Width", xlab = "Sepal Length", ylab = "Sepal Width")
+#'
+#' # Example 3: Scatter Plot with Random Data
+#' random_x <- rnorm(100)
+#' random_y <- rnorm(100)
+#' plot_scatter(random_x, random_y, title = "Random Scatter Plot", xlab = "Random X", ylab = "Random Y")
 #' plot_scatter(mtcars$wt, mtcars$mpg, title = "Weight vs MPG")
 plot_scatter <- function(x, y, title = "Scatter Plot", xlab = "X", ylab = "Y") {
   ggplot2::ggplot(data = data.frame(x = x, y = y), ggplot2::aes(x = x, y = y)) +
