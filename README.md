@@ -17,6 +17,7 @@ remotes::install_github("jpeter96/dataVisualizer")
 The package has 2 main functions: "plot_histogram" and "plot_scatter".
 
 1. **plot_histogram**
+
 **Usage**
 This function allows you to create a histogram for a given numeric vector. You can use it like this:
 ```R
@@ -31,12 +32,16 @@ bins: Number of bins for the histogram. Default is 30.
 title: Title of the histogram. Default is "Histogram".
 xlab: Label for the x-axis. Default is "Value".
 ylab: Label for the y-axis. Default is "Frequency".
+
 **Output**
 The output is a ggplot2 object representing the histogram.
+
 **Explanation**
 The function works by plotting a histogram of the given numeric vector using ggplot2. It allows customization of the number of bins, title, and axis labels.
 
+
 2. **plot_scatter**:
+   
 **Usage**
 This function allows you to create a scatter plot for two numeric vectors. You can use it like this:
 ```R
@@ -51,11 +56,13 @@ y: A numeric vector for the y-axis.
 title: Title of the scatter plot. Default is "Scatter Plot".
 xlab: Label for the x-axis. Default is "X".
 ylab: Label for the y-axis. Default is "Y".
+
 **Output**
 The output is a ggplot2 object representing the scatter plot.
 
 **Explanation**
 The function works by plotting a scatter plot of the given numeric vectors using ggplot2. It allows customization of the title and axis labels.
+
 
 ### Contribution 🤝
 If you want to contribute to the package, feel free to open a pull request.
