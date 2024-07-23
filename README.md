@@ -5,8 +5,7 @@ R package for creating customizable visualizations for data analysis
 
 ## dataVisualizer 📊
 ### Introduction 📝
-`dataVisualizer` is an R package designed to simplify the creation of customizable visualizations for data analysis using `ggplot2`. This package was built for a university project in Advanced Statistical Software at Ludwig-Maximilians-University Munich.
-
+`dataVisualizer` is an R package designed to simplify the creation of customizable visualizations for data analysis using `ggplot2`. This package was built for a university project in R
 ### Installation 🖥️
 You can simply install the package from GitHub using the following command:
 
@@ -15,7 +14,7 @@ remotes::install_github("jpeter96/dataVisualizer")
 ```
 
 ### Usage 📊
-The package has 2 main functions: plot_histogram and plot_scatter.
+The package has 2 main functions: "plot_histogram" and "plot_scatter".
 
 1. **plot_histogram**
 **Usage**
