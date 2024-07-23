@@ -23,7 +23,15 @@ This function allows you to create a histogram for a given numeric vector. You c
 ```R
 library(dataVisualizer)
 
+# Example 1: Basic Histogram
 plot_histogram(mtcars$mpg, bins = 10, title = "MPG Histogram")
+
+# Example 2: Custom Histogram with different bin size
+plot_histogram(iris$Sepal.Length, bins = 20, title = "Sepal Length Histogram", xlab = "Sepal Length", ylab = "Frequency")
+
+# Example 3: Histogram of randomly generated data
+random_data <- rnorm(1000, mean = 50, sd = 10)
+plot_histogram(random_data, bins = 15, title = "Random Data Histogram", xlab = "Values", ylab = "Count")
 ```
 The function takes the following arguments:
 
@@ -47,7 +55,16 @@ This function allows you to create a scatter plot for two numeric vectors. You c
 ```R
 library(dataVisualizer)
 
-plot_scatter(mtcars$wt, mtcars$mpg, title = "Weight vs MPG")
+# Example 1: Basic Scatter Plot
+plot_scatter(mtcars$wt, mtcars$mpg, title = "Weight vs MPG", xlab = "Weight", ylab = "MPG")
+
+# Example 2: Scatter Plot with Iris Dataset
+plot_scatter(iris$Sepal.Length, iris$Sepal.Width, title = "Sepal Length vs Width", xlab = "Sepal Length", ylab = "Sepal Width")
+
+# Example 3: Scatter Plot with Random Data
+random_x <- rnorm(100)
+random_y <- rnorm(100)
+plot_scatter(random_x, random_y, title = "Random Scatter Plot", xlab = "Random X", ylab = "Random Y")
 ```
 The function takes the following arguments:
 
