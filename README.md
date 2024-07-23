@@ -1,11 +1,7 @@
 # dataVisualizer 📊
-
-## Banner
 R package for creating customizable visualizations for data analysis
 
-## License Badge Changelog Badge Version Badge
-<!-- You can add badges here using shields.io, for example: -->
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 
 ## dataVisualizer 📊
 ### Introduction 📝
@@ -67,6 +63,10 @@ If you want to contribute to the package, feel free to open a pull request.
 
 ### License 📜
 MIT License: https://opensource.org/licenses/MIT
+## License Badge Changelog Badge Version Badge
+<!-- You can add badges here using shields.io, for example: -->
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 
 ### Disclaimer 🚨
 This package is for educational purposes only. I am not responsible for any misuse of the package. Use at your own risk.
